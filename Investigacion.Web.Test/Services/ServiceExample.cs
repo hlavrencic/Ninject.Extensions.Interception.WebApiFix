@@ -17,7 +17,7 @@ namespace Investigacion.Web.Test.Controllers
             this.dao = dao;
         }
 
-        [Transaction]
+        [TransactionInterceptor]
         public virtual void Save()
         {
             dao.Increment();

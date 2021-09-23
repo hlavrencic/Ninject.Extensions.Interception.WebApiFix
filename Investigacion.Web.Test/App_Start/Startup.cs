@@ -1,13 +1,11 @@
 ﻿using System.Web.Http;
 using Ninject;
 using Owin;
-using System.Web.Http.Filters;
-using System.Web.Http.Validation;
 using Investigacion.Web.Test.Controllers;
 using Investigacion.Web.Test.Services;
-using Ninject.Web.WebApi;
 using Ninject.Extensions.Interception.Infrastructure.Language;
 using System.Linq;
+using Ninject.Planning.Strategies;
 
 namespace Investigacion.Web.Test.App_Start
 {
@@ -30,7 +28,9 @@ namespace Investigacion.Web.Test.App_Start
         private StandardKernel CreateKernel()
         {
             var kernel = new StandardKernel();
-    
+
+            kernel.Components.Add<IPlanningStrategy,CustomPlanningStrategy<TransactionInterceptorAttribute, TransactionInterceptor>>();
+
             kernel
                 .Bind<IServiceExample>()
                 .To<ServiceExample>()
