@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.7" />
+    <PackageReference Include="Microsoft.Owin.SelfHost" Version="4.2.0" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Ninject.Extensions.ContextPreservation" Version="3.3.1" />
+    <PackageReference Include="Ninject.Extensions.Interception" Version="3.3.5" />
+    <PackageReference Include="Ninject.Extensions.Interception.DynamicProxy" Version="3.3.5" />
+    <PackageReference Include="Ninject.MockingKernel.Moq" Version="3.3.0" />
+    <PackageReference Include="Ninject.Web.Common" Version="3.3.2" />
+    <PackageReference Include="Ninject.Web.WebApi" Version="3.3.1" />
+    <PackageReference Include="Ninject.Web.WebApi.OwinSelfHost" Version="3.3.1" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+</Project>
