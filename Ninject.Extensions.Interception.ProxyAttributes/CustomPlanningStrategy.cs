@@ -1,9 +1,7 @@
-﻿using Ninject;
-using System.Linq;
+﻿using System.Linq;
 using Ninject.Components;
 using Ninject.Planning.Strategies;
 using System;
-using Ninject.Extensions.Interception;
 using Ninject.Extensions.Interception.Advice;
 using Ninject.Extensions.Interception.Registry;
 using Ninject.Planning;
@@ -11,7 +9,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Ninject.Extensions.Interception.Planning.Directives;
 
-namespace Investigacion.Web.Test.App_Start
+namespace Ninject.Extensions.Interception.ProxyAttributes
 {
     public class CustomPlanningStrategy<TAttribute, TInterceptor> :
     NinjectComponent, IPlanningStrategy

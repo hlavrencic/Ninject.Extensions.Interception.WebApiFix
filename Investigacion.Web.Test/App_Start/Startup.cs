@@ -6,6 +6,7 @@ using Investigacion.Web.Test.Services;
 using Ninject.Extensions.Interception.Infrastructure.Language;
 using System.Linq;
 using Ninject.Planning.Strategies;
+using Ninject.Extensions.Interception.ProxyAttributes;
 
 namespace Investigacion.Web.Test.App_Start
 {
@@ -29,7 +30,7 @@ namespace Investigacion.Web.Test.App_Start
         {
             var kernel = new StandardKernel();
 
-            kernel.Components.Add<IPlanningStrategy,CustomPlanningStrategy<TransactionInterceptorAttribute, TransactionInterceptor>>();
+            kernel.AddInterceptor<TransactionInterceptorAttribute, TransactionInterceptor>();
 
             kernel
                 .Bind<IServiceExample>()
