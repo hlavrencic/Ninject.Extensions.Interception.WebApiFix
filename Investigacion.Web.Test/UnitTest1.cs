@@ -4,6 +4,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Owin.Hosting;
 using Investigacion.Web.Test.App_Start;
+using System.Linq;
 
 namespace Investigacion.Web.Test
 {
@@ -59,6 +60,21 @@ namespace Investigacion.Web.Test
             {
                 Assert.AreEqual(2, value);
             }
+        }
+
+        [Test]
+        public async Task StressTest()
+        {
+            var sequence = Enumerable.Repeat(Test1(), 1000);
+
+            var timerInit = DateTime.UtcNow;
+
+            await Task.WhenAll(sequence);
+
+            var timerEnd = DateTime.UtcNow;
+
+            var demora = timerEnd.Subtract(timerInit);
+            Console.WriteLine(demora);
         }
 
         private async Task<int> Request()
