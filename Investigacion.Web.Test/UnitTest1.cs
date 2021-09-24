@@ -65,11 +65,11 @@ namespace Investigacion.Web.Test
         [Test]
         public async Task StressTest()
         {
-            var sequence = Enumerable.Repeat(Test1(), 1000);
+            var sequence = Enumerable.Range(1,1000).ToDictionary(c => c, c => Test1());
 
             var timerInit = DateTime.UtcNow;
 
-            await Task.WhenAll(sequence);
+            await Task.WhenAll(sequence.Values);
 
             var timerEnd = DateTime.UtcNow;
 
