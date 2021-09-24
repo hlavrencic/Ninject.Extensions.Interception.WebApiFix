@@ -75,6 +75,7 @@ namespace Investigacion.Web.Test
 
             var demora = timerEnd.Subtract(timerInit);
             Console.WriteLine(demora);
+            Assert.IsTrue(demora < TimeSpan.FromSeconds(5), "Demora demasiado: {0}", demora);
         }
 
         private async Task<int> Request()
