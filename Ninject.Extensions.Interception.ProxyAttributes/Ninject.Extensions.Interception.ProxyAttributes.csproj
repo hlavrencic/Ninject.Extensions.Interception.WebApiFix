@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Authors>hlavrencic</Authors>
+    <Company>hnet</Company>
+    <Description>Allows to proxy any methods in your application. You only need to apply a custom attribute to the methods yout want to intercept and then register that attribute to your custom interceptor.</Description>
+    <PackageTags>ninject proxy attribute</PackageTags>
+    <RepositoryUrl>https://github.com/hlavrencic/Ninject.Extensions.Interception.WebApiFix</RepositoryUrl>
+    <RepositoryType>GITHUB</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject.Extensions.Interception" Version="3.3.0" />
+  </ItemGroup>
+
+</Project>
