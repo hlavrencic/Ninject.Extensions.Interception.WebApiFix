@@ -1,4 +1,4 @@
-# Ninject.Extensions.Interception.WebApiFix
+# Ninject.Extensions.Interception.ProxyAttributes
 
 Allows to proxy any methods in your application. You only need to apply a custom attribute to the methods yout want to intercept and then register that attribute to your custom interceptor.
 
