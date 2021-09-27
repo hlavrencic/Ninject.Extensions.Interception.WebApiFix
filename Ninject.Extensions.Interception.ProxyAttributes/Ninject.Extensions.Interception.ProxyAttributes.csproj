@@ -8,13 +8,13 @@
     <PackageTags>ninject proxy attribute</PackageTags>
     <RepositoryUrl>https://github.com/hlavrencic/Ninject.Extensions.Interception.WebApiFix</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>..\README.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/hlavrencic/Ninject.Extensions.Interception.WebApiFix/tree/master/Ninject.Extensions.Interception.ProxyAttributes</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Ninject.Extensions.Interception" Version="3.3.0" />
-    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include=".\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
