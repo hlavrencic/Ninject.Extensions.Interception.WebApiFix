@@ -1,4 +1,5 @@
 ﻿using Ninject.Components;
+using Ninject.Infrastructure;
 using Ninject.Planning.Strategies;
 using System;
 
@@ -6,6 +7,13 @@ namespace Ninject.Extensions.Interception.ProxyAttributes
 {
     public static class NinjectComponentExtensions
     {
+        public static void AddInterceptor<TAttribute, TInterceptor>(this IHaveKernel module)
+            where TAttribute : Attribute
+            where TInterceptor : IInterceptor
+        {
+            module.Kernel.AddInterceptor<TAttribute, TInterceptor>();
+        }
+
         public static void AddInterceptor<TAttribute, TInterceptor>(this IKernel kernel)
             where TAttribute : Attribute
             where TInterceptor : IInterceptor
