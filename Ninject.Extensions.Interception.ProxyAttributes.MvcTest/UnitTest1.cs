@@ -25,7 +25,7 @@ namespace Ninject.Extensions.Interception.ProxyAttributes.MvcTest
             host.RunAsync(token);
         }
 
-        [Ignore]
+        [Ignore("Aun no esta listo")]
         [Test]
         public async Task Test1()
         {
