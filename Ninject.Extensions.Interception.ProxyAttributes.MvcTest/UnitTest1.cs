@@ -25,6 +25,7 @@ namespace Ninject.Extensions.Interception.ProxyAttributes.MvcTest
             host.RunAsync(token);
         }
 
+        [Ignore]
         [Test]
         public async Task Test1()
         {
