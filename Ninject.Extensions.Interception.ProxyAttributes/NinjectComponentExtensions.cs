@@ -27,14 +27,6 @@ namespace Ninject.Extensions.Interception.ProxyAttributes
             where TInterceptor : IInterceptor
         {
             componentContainer.Add<IPlanningStrategy, CustomPlanningStrategy<TAttribute, TInterceptor>>();
-
-            var kernel = componentContainer.Kernel;
-            if (kernel.GetBindings(typeof(InterceptorImplementation<>)).Any())
-            {
-                return;
-            }
-
-            kernel.Bind(typeof(InterceptorImplementation<>)).ToSelf().InTransientScope();
         }
     }
 }
