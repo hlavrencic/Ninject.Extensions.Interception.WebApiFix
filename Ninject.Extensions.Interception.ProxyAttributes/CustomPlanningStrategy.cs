@@ -40,7 +40,7 @@ namespace Ninject.Extensions.Interception.ProxyAttributes
 
                 var advice = adviceFactory.Create(method);
 
-                advice.Callback = request => request.Kernel.Get<TInterceptor>();
+                advice.Callback = request => request.Kernel.Get<InterceptorImplementation<TInterceptor>>();
                 adviceRegistry.Register(advice);
 
                 if (!plan.Has<ProxyDirective>())

@@ -2,6 +2,7 @@
 using Ninject.Infrastructure;
 using Ninject.Planning.Strategies;
 using System;
+using System.Linq;
 
 namespace Ninject.Extensions.Interception.ProxyAttributes
 {
@@ -26,6 +27,14 @@ namespace Ninject.Extensions.Interception.ProxyAttributes
             where TInterceptor : IInterceptor
         {
             componentContainer.Add<IPlanningStrategy, CustomPlanningStrategy<TAttribute, TInterceptor>>();
+
+            var kernel = componentContainer.Kernel;
+            if (kernel.GetBindings(typeof(InterceptorImplementation<>)).Any())
+            {
+                return;
+            }
+
+            kernel.Bind(typeof(InterceptorImplementation<>)).ToSelf().InTransientScope();
         }
     }
 }
