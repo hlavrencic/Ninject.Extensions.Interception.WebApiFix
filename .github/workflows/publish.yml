@@ -20,7 +20,7 @@ jobs:
     - name: Test
       run: dotnet test --configuration Debug /p:Version=${VERSION} --no-build
     - name: Pack
-      run: dotnet pack --configuration Debug /p:Version=${VERSION} --no-build --output . #/p:IncludeSymbols=true /p:SymbolPackageFormat=snupkg --no-build --include-source --include-symbols --output .
+      run: dotnet pack --configuration Debug /p:Version=${VERSION} --no-build --output .
     - name: Push GitHub
       run: dotnet nuget push Ninject.Extensions.Interception.ProxyAttributes.${VERSION}.nupkg --source https://nuget.pkg.github.com/hlavrencic/index.json --api-key ${GITHUB_TOKEN}
       env:
