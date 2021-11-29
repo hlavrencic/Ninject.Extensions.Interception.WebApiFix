@@ -13,6 +13,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Ninject.Extensions.Interception.ProxyAttributes.5.5.5.nupkg" />
+    <None Remove="Ninject.Extensions.Interception.ProxyAttributes.5.5.5.snupkg" />
+    <None Remove="Ninject.Extensions.Interception.ProxyAttributes.5.5.6.nupkg" />
+    <None Remove="Ninject.Extensions.Interception.ProxyAttributes.5.5.6.snupkg" />
+    <None Remove="nuget.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ninject.Extensions.Interception" Version="3.3.0" />
     <None Include=".\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
