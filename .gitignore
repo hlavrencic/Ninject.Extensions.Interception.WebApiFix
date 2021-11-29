@@ -161,6 +161,8 @@ PublishScripts/
 # NuGet v3's project.json files produces more ignoreable files
 *.nuget.props
 *.nuget.targets
+nuget.exe
+*.snupkg
 
 # Microsoft Azure Build Output
 csx/
@@ -283,4 +285,3 @@ App_Data
 /Investigacion.ReportsOperaciones/Investigacion.ReportsOperaciones.rptproj.bak
 /Investigacion.ReportsOperaciones/Investigacion.ReportsOperaciones.rptproj.rsuser
 /Investigacion.WebTasks.Recurrentes/App_Data/*
-/Ninject.Extensions.Interception.ProxyAttributes/nuget.exe
