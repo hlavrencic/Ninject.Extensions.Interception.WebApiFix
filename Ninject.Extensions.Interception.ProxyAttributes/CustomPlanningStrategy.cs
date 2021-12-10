@@ -64,8 +64,7 @@ namespace Ninject.Extensions.Interception.ProxyAttributes
         private static bool ShouldIntercept(MethodInfo methodInfo)
         {
             return methodInfo.DeclaringType != typeof(object) &&
-                   !methodInfo.IsPrivate &&
-                   !methodInfo.IsFinal;
+                   !methodInfo.IsPrivate;
         }
     }
 }
