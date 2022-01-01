@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Ninject.Extensions.Interception.Planning.Directives;
 
-namespace Ninject.Extensions.Interception.ProxyAttributes
+namespace Ninject.Extensions.Interception.AttributeProxy
 {
     public class CustomPlanningStrategy<TAttribute, TInterceptor> :
     NinjectComponent, IPlanningStrategy

@@ -1,6 +1,6 @@
 ﻿using Ninject.Syntax;
 
-namespace Ninject.Extensions.Interception.ProxyAttributes
+namespace Ninject.Extensions.Interception.AttributeProxy
 {
     public class InterceptorImplementation<TInterceptor> : IInterceptor
         where TInterceptor : IInterceptor

@@ -4,7 +4,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Ninject.Extensions.Interception.ProxyAttributes.MvcTest
+namespace Ninject.Extensions.Interception.AttributeProxy.MvcTest
 {
     public class Tests
     {

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Ninject.Extensions.Interception.ProxyAttributes.MvcTest
+namespace Ninject.Extensions.Interception.AttributeProxy.MvcTest
 {
     public class Startup
     {

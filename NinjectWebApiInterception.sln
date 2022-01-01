@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investigacion.Web.Test", "Investigacion.Web.Test\Investigacion.Web.Test.csproj", "{2EA19678-E656-4587-9B60-6620FD4CEF59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ninject.Extensions.Interception.AttributeProxy", "Ninject.Extensions.Interception.AttributeProxy\Ninject.Extensions.Interception.AttributeProxy.csproj", "{9EE7A547-F73A-4D68-8260-461153629502}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ninject.Extensions.Interception.ProxyAttributes", "Ninject.Extensions.Interception.ProxyAttributes\Ninject.Extensions.Interception.ProxyAttributes.csproj", "{9EE7A547-F73A-4D68-8260-461153629502}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.Interception.ProxyAttributes.MvcTest", "Ninject.Extensions.Interception.ProxyAttributes.MvcTest\Ninject.Extensions.Interception.ProxyAttributes.MvcTest.csproj", "{42A1C4F7-5B81-49F1-90E0-8E8BD72FB92F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.Interception.AttributeProxy.MvcTest", "Ninject.Extensions.Interception.AttributeProxy.MvcTest\Ninject.Extensions.Interception.AttributeProxy.MvcTest.csproj", "{42A1C4F7-5B81-49F1-90E0-8E8BD72FB92F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

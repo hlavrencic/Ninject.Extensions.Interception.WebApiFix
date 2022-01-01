@@ -4,7 +4,7 @@ using Ninject.Planning.Strategies;
 using System;
 using System.Linq;
 
-namespace Ninject.Extensions.Interception.ProxyAttributes
+namespace Ninject.Extensions.Interception.AttributeProxy
 {
     public static class NinjectComponentExtensions
     {
