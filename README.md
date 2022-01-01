@@ -1,4 +1,4 @@
-# Ninject.Extensions.Interception.ProxyAttributes
+# Ninject.Extensions.Interception.AttributeProxy
 
 Allows to proxy any methods in your application. You only need to apply a custom attribute to the methods yout want to intercept and then register that attribute to your custom interceptor.
 
