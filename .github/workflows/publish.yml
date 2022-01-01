@@ -27,10 +27,10 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Debug /p:Version=${VERSION} --include-source --no-build --output .
     - name: Push GitHub
-      run: dotnet nuget push Ninject.Extensions.Interception.ProxyAttributes.${VERSION}.nupkg --source https://nuget.pkg.github.com/hlavrencic/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push Ninject.Extensions.Interception.AttributeProxy.${VERSION}.nupkg --source https://nuget.pkg.github.com/hlavrencic/index.json --api-key ${GITHUB_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Push Nuget
-      run: dotnet nuget push Ninject.Extensions.Interception.ProxyAttributes.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_API_KEY}
+      run: dotnet nuget push Ninject.Extensions.Interception.AttributeProxy.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_API_KEY}
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}       
