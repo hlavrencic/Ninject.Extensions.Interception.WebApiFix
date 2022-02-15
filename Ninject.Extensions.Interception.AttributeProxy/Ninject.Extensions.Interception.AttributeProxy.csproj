@@ -10,7 +10,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/hlavrencic/Ninject.Extensions.Interception.WebApiFix/tree/master/Ninject.Extensions.Interception.AttributeProxy</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/hlavrencic/Ninject.Extensions.Interception.WebApiFix</PackageProjectUrl>
     <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
